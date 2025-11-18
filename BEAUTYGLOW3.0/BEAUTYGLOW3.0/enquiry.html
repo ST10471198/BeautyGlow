@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about Beauty Glow skincare services, products, or opportunities to volunteer or sponsor our initiatives.">
+    <meta name="keywords" content="skincare enquiry, beauty products inquiry, volunteer skincare, sponsor beauty brand, Beauty Glow services">
+    <meta name="author" content="Beauty Glow">
+    <title>Service Enquiry | Beauty Glow Skincare</title>
+    <link rel="stylesheet" href="CSS/enquiry.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="Images/Logo.jpg" width="100" height="100" alt="Beauty Glow Logo - Premium Skincare Brand">
+            </div>
+            <nav class="nav-container" aria-label="Main Navigation">
+                <a href="./index.html">Home</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./news.html">News</a>
+                <a href="./contact.html">Contact us</a>          
+                <a href="./about.html">About us</a> 
+                <a href="./enquiry.html" class="active">Service Enquiry</a>
+            </nav> 
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <h1><span class="underline">Service & Product Enquiry</span></h1>
+            <p class="tagline">Interested in our skincare services, products, or want to support our mission? Let us know!</p>
+        </section>
+        
+        <div class="container">
+            <!-- Success Modal -->
+            <div id="successModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-body">
+                        <div class="success-icon">✓</div>
+                        <h2>Enquiry Submitted Successfully!</h2>
+                        <div id="responseDetails">
+                            
+                        </div>
+                        <button id="modalCloseBtn" class="btn">Close</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enquiry Form Section -->
+            <section class="enquiry-form-section">
+                <div class="form-intro">
+                    <h2>Tell Us About Your Interest</h2>
+                    <p>Whether you're interested in our skincare services, products, or want to join our mission as a volunteer or sponsor, we'd love to hear from you. Complete the form below and we'll provide you with detailed information.</p>
+                </div>
+                
+                <div class="enquiry-form">
+                    <form id="enquiryForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required aria-required="true">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email address" required aria-required="true">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="enquiryType">Type of Enquiry *</label>
+                            <select id="enquiryType" class="form-control" required aria-required="true">
+                                <option value="">Please select an option</option>
+                                <option value="product">Product Information & Pricing</option>
+                                <option value="service">Skincare Consultation Service</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="sponsor">Sponsorship/Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="enquiryTypeError"></span>
+                        </div>
+                        
+                        <!-- Dynamic fields based on enquiry type -->
+                        <div id="dynamicFields">
+                            <!-- Content will be dynamically inserted based on selection -->
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" class="form-control" placeholder="Please provide any additional information about your enquiry..." rows="5"></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our skincare newsletter for tips and exclusive offers</label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Submit Enquiry</button>
+                    </form>
+                </div>
+            </section>
+            
+            <!-- Response Information Section -->
+            <section class="response-info">
+                <h2>What Happens Next?</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="card-icon">📧</div>
+                        <h3>Immediate Response</h3>
+                        <p>After submitting your enquiry, you'll receive an immediate response with relevant information about pricing, availability, or next steps.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">⏱️</div>
+                        <h3>Follow-up Within 24 Hours</h3>
+                        <p>Our skincare specialists will review your enquiry and contact you within 24 hours to discuss your specific needs in detail.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon">💬</div>
+                        <h3>Personalized Consultation</h3>
+                        <p>For service or product enquiries, we'll schedule a personalized skincare consultation to address your specific concerns.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty Glow Skincare</h3>
+                    <p>Creating radiant beauty with natural skincare expertise since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Beauty Glow</h3>
+                    <p>Rosebank Mall, Johannesburg, 2196</p>
+                    <p>Phone: +27 66 231 0108</p>
+                    <p>Email: beautyglow@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Skincare Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Our Skincare</a></li>
+                        <li><a href="./gallery.html">Product Gallery</a></li>
+                        <li><a href="./news.html">Skincare News</a></li>
+                        <li><a href="./contact.html">Contact Beauty Glow</a></li>
+                        <li><a href="./enquiry.html">Service Enquiry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Beauty Glow Skincare. All Rights Reserved. | ST10471198</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="JavaScript/enquiry.js"></script>
+</body>
+</html>

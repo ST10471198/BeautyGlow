@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Beauty Glow's skincare gallery featuring our premium products, before & after results, and customer transformations. Discover natural skincare solutions.">
+    <meta name="keywords" content="skincare gallery, beauty products, before and after, natural skincare, Beauty Glow, skincare results">
+    <title>Beauty Glow Gallery | Premium Skincare Products & Results</title>
+    <link rel="stylesheet" href="CSS/gallery.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="Images/Logo.jpg" width="100" height="100" alt="Beauty Glow Logo - Premium Natural Skincare Brand">
+            </div>
+            <nav class="nav-container">
+                <a href="./index.html">Home</a>
+                <a href="./gallery.html" class="active">Gallery</a>
+                <a href="./news.html">News</a>
+                <a href="./contact.html">Contact us</a>          
+                <a href="./about.html">About us</a>
+                <a href="./enquiry.html">Enquire</a>
+            </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1><span class="underline">Beauty Glow Gallery</span></h1>
+            <p class="tagline">Discover our premium skincare collection and visible results</p>
+        </section>
+
+        <div class="container">
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="lightbox-close">&times;</span>
+                <div class="lightbox-content">
+                    <img id="lightbox-img" src="" alt="">
+                    <div class="lightbox-caption">
+                        <h2 id="lightbox-title"></h2>
+                        <p id="lightbox-desc"></p>
+                    </div>
+                </div>
+                <div class="lightbox-controls">
+                    <button class="lightbox-btn prev-btn">‹</button>
+                    <button class="lightbox-btn next-btn">›</button>
+                </div>
+            </div>
+
+            <!-- Gallery Controls -->
+            <section class="gallery-controls" aria-label="Gallery Filter Controls">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search skincare products..." class="search-input" aria-label="Search products">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="skincare">Skincare</button>
+                    <button class="filter-btn" data-filter="results">Results</button>
+                    <button class="filter-btn" data-filter="premium">Premium</button>
+                </div>
+                <div class="sort-container">
+                    <select id="sortSelect" class="sort-select" aria-label="Sort products by">
+                        <option value="default">Sort by: Default</option>
+                        <option value="name">Sort by: Name</option>
+                        <option value="category">Sort by: Category</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="gallery-section">
+                <h2>Our Premium Skincare Product Range</h2>
+                <p class="section-description">Explore our collection of natural, effective skincare solutions designed for visible results</p>
+                
+                <div class="gallery-grid" id="galleryGrid">
+                    <div class="gallery-item" data-category="skincare" data-name="Premium Skincare Solution">
+                        <img src="Images/WhatsApp Image 2025-08-21 at 12.13.34 (1).jpeg" alt="Beauty Glow Premium Skincare Solution with natural ingredients">
+                        <div class="image-overlay">
+                            <h3>Premium Skincare Solution</h3>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="skincare" data-name="Natural Ingredients">
+                        <img src="Images/WhatsApp Image 2025-08-21 at 12.13.34 (2).jpeg" alt="Beauty Glow Natural Ingredients Skincare Product">
+                        <div class="image-overlay">
+                            <h3>Natural Ingredients</h3>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="premium" data-name="Dermatologically Tested">
+                        <img src="Images/WhatsApp Image 2025-08-21 at 12.13.34 (3).jpeg" alt="Beauty Glow Dermatologically Tested Skincare">
+                        <div class="image-overlay">
+                            <h3>Dermatologically Tested</h3>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="skincare" data-name="Gentle Formulation">
+                        <img src="Images/WhatsApp Image 2025-08-21 at 12.13.34 (4).jpeg" alt="Beauty Glow Gentle Formulation for sensitive skin">
+                        <div class="image-overlay">
+                            <h3>Gentle Formulation</h3>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="results" data-name="Visible Results">
+                        <img src="Images/WhatsApp Image 2025-08-21 at 12.13.34 (5).jpeg" alt="Beauty Glow Visible Results Skincare Transformation">
+                        <div class="image-overlay">
+                            <h3>Visible Results</h3>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="skincare" data-name="Skin Renewal">
+                        <img src="Images/WhatsApp Image 2025-08-21 at 12.13.34 (6).jpeg" alt="Beauty Glow Skin Renewal Treatment">
+                        <div class="image-overlay">
+                            <h3>Skin Renewal</h3>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="premium" data-name="Radiant Complexion">
+                        <img src="Images/WhatsApp Image 2025-08-21 at 12.13.34 (7).jpeg" alt="Beauty Glow Radiant Complexion Cream">
+                        <div class="image-overlay">
+                            <h3>Radiant Complexion</h3>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="skincare" data-name="Complete Care">
+                        <img src="Images/WhatsApp Image 2025-08-21 at 12.13.34.jpeg" alt="Beauty Glow Complete Skincare Routine">
+                        <div class="image-overlay">
+                            <h3>Complete Care</h3>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="results-section">
+                <h2>Real Results Seen After One Week</h2>
+                <p class="section-description">Documented transformations from customers using our natural skincare products</p>
+                
+                <div class="results-container">
+                    <div class="result-item">
+                        <div class="result-image">
+                            <img src="Images/WhatsApp Image 2025-08-21 at 13.50.33_96a91c10.jpg" alt="Before and after results from Beauty Glow skincare products">
+                            <button class="zoom-btn">🔍</button>
+                        </div>
+                        <div class="result-info">
+                            <h3>Visible Skin Transformation</h3>
+                            <p>Our customers report noticeable improvements in skin texture, tone, and radiance within just one week of consistent use. The gentle yet effective formulation works to restore your natural glow using premium natural ingredients.</p>
+                            <ul>
+                                <li>Improved skin texture and elasticity</li>
+                                <li>Reduced appearance of blemishes and imperfections</li>
+                                <li>Enhanced natural radiance and glow</li>
+                                <li>Balanced and even skin tone</li>
+                            </ul>
+                            <div class="result-stats">
+                                <div class="stat">
+                                    <span class="stat-number">94%</span>
+                                    <span class="stat-label">Saw visible results in 1 week</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">98%</span>
+                                    <span class="stat-label">Customer satisfaction rate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Before & After Section -->
+            <section class="comparison-section">
+                <h2>Before & After Transformations</h2>
+                <p class="section-description">Real results from our satisfied Beauty Glow customers</p>
+                
+                <div class="comparison-container">
+                    <div class="comparison-slider">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="Images/placeholder-before.jpg" alt="Skin before using Beauty Glow natural skincare products">
+                                <span class="label">Before Beauty Glow</span>
+                            </div>
+                            <div class="after">
+                                <img src="Images/placeholder-after.jpg" alt="Skin after using Beauty Glow natural skincare products">
+                                <span class="label">After Beauty Glow</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider" id="comparisonSlider" aria-label="Compare before and after images">
+                        </div>
+                    </div>
+                    <div class="comparison-info">
+                        <h3>Remarkable Skincare Results</h3>
+                        <p>See the transformative difference our natural skincare products make. Slide to compare before and after results from real customers who have used our Beauty Glow solutions for just one week.</p>
+                        <div class="testimonial">
+                            <p>"I couldn't believe the difference in just one week! My skin has never looked better or felt healthier."</p>
+                            <span class="testimonial-author">- Vuledzani R., Beauty Glow Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty Glow</h3>
+                    <p>Creating radiant beauty with natural skincare since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Beauty Glow</h3>
+                    <p>Johannesburg Rosebank Mall, Johannesburg, 2000</p>
+                    <p>Phone: +27 66 231 0108</p>
+                    <p>Email: beautyglow@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./gallery.html">Product Gallery</a></li>
+                        <li><a href="./news.html">Skincare News</a></li>
+                        <li><a href="./contact.html">Contact Beauty Glow</a></li>
+                        <li><a href="./enquiry.html">Enquire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Beauty Glow Skincare. All Rights Reserved. | ST10471198</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JavaScript/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Beauty Glow for skincare inquiries, product support, and customer service. Get in touch via phone, email, or visit our Johannesburg location.">
+    <meta name="keywords" content="contact Beauty Glow, skincare support, beauty product help, customer service, Johannesburg skincare">
+    <meta name="author" content="Beauty Glow">
+    <title>Contact Beauty Glow | Customer Support & Skincare Inquiries</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="Images/Logo.jpg" width="100" height="100" alt="Beauty Glow Logo - Premium Skincare Brand">
+            </div>
+            <nav class="nav-container" aria-label="Main Navigation">
+                <a href="./index.html">Home</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./news.html">News</a>
+                <a href="./contact.html" class="active">Contact us</a>          
+                <a href="./about.html">About us</a> 
+                <a href="./enquiry.html">Enquire</a>
+            </nav> 
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <h1><span class="underline">Contact Beauty Glow</span></h1>
+            <p class="tagline">We'd love to hear from you. Reach out with any skincare questions or feedback!</p>
+        </section>
+        
+        <div class="container">
+            <!-- Success Modal -->
+            <div id="successModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-body">
+                        <div class="success-icon">✓</div>
+                        <h2>Message Sent Successfully!</h2>
+                        <p>Thank you for contacting Beauty Glow. We'll get back to you as soon as possible with skincare advice and support.</p>
+                        <button id="modalCloseBtn" class="btn">Close</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Tabs -->
+            <section class="tabs-container" aria-label="Contact Options">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="contact-form">Contact Form</button>
+                    <button class="tab-btn" data-tab="contact-info">Contact Information</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div id="contact-form" class="tab-panel active">
+                        <div class="contact-form-section">
+                            <h2>How May We Help With Your Skincare Needs?</h2>
+                            <div class="contact-form">
+                                <form id="contactForm" action="mailto:beautyglow@gmail.com" method="post" enctype="text/plain">
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required aria-required="true" minlength="2" maxlength="50">
+                                        <span class="error-message" id="nameError"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                        <span class="error-message" id="emailError"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" pattern="[0-9+\-\s()]{10,}" title="Please enter a valid phone number">
+                                        <span class="error-message" id="phoneError"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="messageType">Message Type</label>
+                                        <select id="messageType" name="messageType" class="form-control" required aria-required="true">
+                                            <option value="" disabled selected>Select message type</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="product">Product Information</option>
+                                            <option value="support">Customer Support</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="complaint">Complaint</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <span class="error-message" id="messageTypeError"></span>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter message subject (e.g., Product Inquiry, Skincare Advice)" maxlength="100">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="message">Your Message</label>
+                                        <textarea id="message" name="message" class="form-control" placeholder="Tell us about your skincare concerns or questions..." rows="5" required aria-required="true" minlength="10" maxlength="1000"></textarea>
+                                        <span class="error-message" id="messageError"></span>
+                                        <div class="char-count"><span id="charCount">0</span>/1000 characters</div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn">Send Skincare Inquiry</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="contact-info" class="tab-panel">
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <div class="info-icon">📍</div>
+                                <div class="info-details">
+                                    <h3>Beauty Glow Location</h3>
+                                    <p>Rosebank Mall, 15A Cradock Ave<br>Johannesburg, 2196</p>
+                                    <div class="map-container">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650213.240184523!2d27.967899283713344!3d-26.691310672979554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c8d37b50aaf%3A0x14ea91e5828c79e9!2sRosebank%20Mall!5e0!3m2!1sen!2sie!4v1756231025157!5m2!1sen!2sie" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Beauty Glow Location at Rosebank Mall Johannesburg"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">📞</div>
+                                <div class="info-details">
+                                    <h3>Phone Support</h3>
+                                    <p>+27 66 231 0108</p>
+                                    <h4>WhatsApp Skincare Consultations</h4>
+                                    <p>+27 79 568 3466</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">✉️</div>
+                                <div class="info-details">
+                                    <h3>Email Support</h3>
+                                    <p>beautyglow@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">📱</div>
+                                <div class="info-details">
+                                    <h3>Instagram Skincare Community</h3>
+                                    <p>@Beauty_Glow</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beauty Glow Skincare</h3>
+                    <p>Creating radiant beauty with natural skincare expertise since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Beauty Glow</h3>
+                    <p>Rosebank Mall, Johannesburg, 2196</p>
+                    <p>Phone: +27 66 231 0108</p>
+                    <p>Email: beautyglow@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Skincare Navigation</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Our Skincare</a></li>
+                        <li><a href="./gallery.html">Product Gallery</a></li>
+                        <li><a href="./news.html">Skincare News</a></li>
+                        <li><a href="./contact.html">Contact Beauty Glow</a></li>
+                        <li><a href="./enquiry.html">Enquire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Beauty Glow Skincare. All Rights Reserved. | ST10471198</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="JavaScript/contact.js"></script>
+</body>
+</html>
